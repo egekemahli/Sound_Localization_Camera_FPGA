@@ -1,0 +1,436 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 14 21:58:06 2019
+# Process ID: 11132
+# Current directory: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7528 C:\Users\ege3b\Desktop\final\basys3_ov7670_v1\basys3_ov7670_v1\basys3_ov7670_v1.xpr
+# Log file: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/vivado.log
+# Journal file: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 792.238 ; gain = 73.625
+update_compile_order -fileset sources_1
+WARNING: [Vivado 12-4144] IP run frame_buffer_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
+
+Top: top_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 922.379 ; gain = 101.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_module' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:47]
+INFO: [Synth 8-3491] module 'clk64kHz' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/clk64kHz.vhd:4' bound to instance 'clk64kHz_map' of component 'clk64kHz' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'clk64kHz' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/clk64kHz.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'clk64kHz' (1#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/clk64kHz.vhd:12]
+INFO: [Synth 8-3491] module 'servo_pwm' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/servo_pwm.vhd:5' bound to instance 'servo_pwm_map' of component 'servo_pwm' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/servo_pwm.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm' (2#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/servo_pwm.vhd:17]
+INFO: [Synth 8-3491] module 'Soundsensor' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:3' bound to instance 'soundsensor1' of component 'Soundsensor' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'Soundsensor' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Soundsensor' (3#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:9]
+INFO: [Synth 8-3491] module 'Soundsensor' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:3' bound to instance 'soundsensor2' of component 'Soundsensor' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:232]
+INFO: [Synth 8-3491] module 'Soundsensor' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:3' bound to instance 'soundsensor3' of component 'Soundsensor' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:237]
+INFO: [Synth 8-3491] module 'clocking' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:10' bound to instance 'your_instance_name' of component 'clocking' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'clocking' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:20]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:54]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:59]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:122]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:128]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (4#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:20]
+INFO: [Synth 8-3491] module 'VGA' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd:10' bound to instance 'Inst_VGA' of component 'VGA' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (5#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd:21]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:8' bound to instance 'Inst_debounce' of component 'debounce' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (6#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:14]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:9' bound to instance 'Inst_ov7670_controller' of component 'ov7670_controller' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:21]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (7#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (8#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (9#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:21]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/.Xil/Vivado-11132-Ege-PC/realtime/frame_buffer_stub.vhdl:5' bound to instance 'Inst_frame_buffer' of component 'frame_buffer' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:294]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/.Xil/Vivado-11132-Ege-PC/realtime/frame_buffer_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:11' bound to instance 'Inst_ov7670_capture' of component 'ov7670_capture' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:305]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (10#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:23]
+INFO: [Synth 8-3491] module 'RGB' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd:8' bound to instance 'Inst_RGB' of component 'RGB' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:317]
+INFO: [Synth 8-638] synthesizing module 'RGB' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'RGB' (11#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd:14]
+INFO: [Synth 8-3491] module 'Address_Generator' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:8' bound to instance 'Inst_Address_Generator' of component 'Address_Generator' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:325]
+INFO: [Synth 8-638] synthesizing module 'Address_Generator' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Address_Generator' (12#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
+INFO: [Synth 8-3491] module 'photocatch' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/photocatch.vhd:8' bound to instance 'photocatch1' of component 'photocatch' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:334]
+INFO: [Synth 8-638] synthesizing module 'photocatch' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/photocatch.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'photocatch' (13#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/photocatch.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (14#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 949.617 ; gain = 128.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 949.617 ; gain = 128.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 949.617 ; gain = 128.922
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/.Xil/Vivado-11132-Ege-PC/frame_buffer/frame_buffer.dcp' for cell 'Inst_frame_buffer'
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc]
+WARNING: [Vivado 12-507] No nets matched 'ov7670_pclk_IBUF'. [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc:138]
+Finished Parsing XDC File [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 1311.770 ; gain = 491.074
+60 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 1311.770 ; gain = 491.074
+reset_run synth_1
+reset_run frame_buffer_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-577] IP run frame_buffer_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
+
+WARNING: [Project 1-577] IP run frame_buffer_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+[Tue May 14 22:02:58 2019] Launched frame_buffer_synth_1, synth_1...
+Run output will be captured here:
+frame_buffer_synth_1: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/frame_buffer_synth_1/runme.log
+synth_1: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/synth_1/runme.log
+[Tue May 14 22:02:58 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A285CDA
+set_property PROGRAM.FILE {C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 14 22:09:28 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/synth_1/runme.log
+[Tue May 14 22:09:28 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 14 22:18:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/synth_1/runme.log
+[Tue May 14 22:18:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 14 22:24:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/synth_1/runme.log
+[Tue May 14 22:24:15 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Vivado 12-4144] IP run frame_buffer_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2034.344 ; gain = 43.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_module' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:47]
+INFO: [Synth 8-3491] module 'clk64kHz' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/clk64kHz.vhd:4' bound to instance 'clk64kHz_map' of component 'clk64kHz' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'clk64kHz' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/clk64kHz.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'clk64kHz' (1#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/clk64kHz.vhd:12]
+WARNING: [Synth 8-5640] Port 'sensorin2' is missing in component declaration [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:57]
+INFO: [Synth 8-3491] module 'servo_pwm' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/servo_pwm.vhd:5' bound to instance 'servo_pwm_map' of component 'servo_pwm' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/servo_pwm.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm' (2#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/servo_pwm.vhd:17]
+INFO: [Synth 8-3491] module 'Soundsensor' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:3' bound to instance 'soundsensor1' of component 'Soundsensor' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'Soundsensor' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Soundsensor' (3#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:9]
+INFO: [Synth 8-3491] module 'Soundsensor' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/Soundsensor.vhd:3' bound to instance 'soundsensor3' of component 'Soundsensor' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:237]
+INFO: [Synth 8-3491] module 'clocking' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:10' bound to instance 'your_instance_name' of component 'clocking' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'clocking' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:20]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:54]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:59]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:122]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:128]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (4#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:20]
+INFO: [Synth 8-3491] module 'VGA' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd:10' bound to instance 'Inst_VGA' of component 'VGA' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (5#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd:21]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:8' bound to instance 'Inst_debounce' of component 'debounce' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (6#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:14]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:9' bound to instance 'Inst_ov7670_controller' of component 'ov7670_controller' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:21]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (7#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (8#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (9#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:21]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/.Xil/Vivado-11132-Ege-PC/realtime/frame_buffer_stub.vhdl:5' bound to instance 'Inst_frame_buffer' of component 'frame_buffer' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:294]
+INFO: [Synth 8-638] synthesizing module 'frame_buffer' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/.Xil/Vivado-11132-Ege-PC/realtime/frame_buffer_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:11' bound to instance 'Inst_ov7670_capture' of component 'ov7670_capture' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:305]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (10#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:23]
+INFO: [Synth 8-3491] module 'RGB' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd:8' bound to instance 'Inst_RGB' of component 'RGB' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:317]
+INFO: [Synth 8-638] synthesizing module 'RGB' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'RGB' (11#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd:14]
+INFO: [Synth 8-3491] module 'Address_Generator' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:8' bound to instance 'Inst_Address_Generator' of component 'Address_Generator' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:325]
+INFO: [Synth 8-638] synthesizing module 'Address_Generator' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Address_Generator' (12#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
+INFO: [Synth 8-3491] module 'photocatch' declared at 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/photocatch.vhd:8' bound to instance 'photocatch1' of component 'photocatch' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:334]
+INFO: [Synth 8-638] synthesizing module 'photocatch' [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/photocatch.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'photocatch' (13#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/new/photocatch.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (14#1) [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:47]
+WARNING: [Synth 8-3331] design servo_pwm has unconnected port Sensorin2
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2075.836 ; gain = 85.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2075.836 ; gain = 85.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2075.836 ; gain = 85.293
+---------------------------------------------------------------------------------
+INFO: [Runs 36-396] self-extracted dcp file (from core container) could not be removed from disk: C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/.Xil/Vivado-11132-Ege-PC/frame_buffer/frame_buffer.dcp
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/.Xil/Vivado-11132-Ege-PC/frame_buffer/frame_buffer.dcp' for cell 'Inst_frame_buffer'
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'swit2'. [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'swit2'. [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc:17]
+WARNING: [Vivado 12-507] No nets matched 'ov7670_pclk_IBUF'. [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc:144]
+Finished Parsing XDC File [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ege3b/Desktop/final/basys3_ov7670_v1/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 2091.914 ; gain = 103.434
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 22:41:50 2019...
